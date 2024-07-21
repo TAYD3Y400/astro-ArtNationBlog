@@ -11,13 +11,18 @@ const userEmail = Astro.cookies.get("userEmail")
         <Image
             src="/heartbeat.png"
             alt="rhythm nation logo"
-            width={64}
-            height={64}
+            width={60}
+            height={60}
             format="webp"
             class="w-16"
         />
 
         <p class="uppercase text-3xl text-zinc-900">blog</p>
     </a>
+    <ul class="flex gap-x-8">
+        <li><a href="/" class="text-teal-900 font-bold">Home</a></li>
+        <li><a href="/about" class="text-teal-900 font-bold">About</a></li>
+        <li><a href="/blog" class="text-teal-900 font-bold">Blog</a></li>
+    </ul>
 
 </header>
